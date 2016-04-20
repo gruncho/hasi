@@ -1,6 +1,8 @@
-## hasi 'empezar'
+## hasi
 
-**No utilizar el theme en producción**, este Theme de WordPress no cuenta con los usos de las últimas versiones de Wordpress, exclusivamente sirve para utilizar algunas de las funcionalidades básicas con las que cuena:
+> **No utilizar el theme en producción**, no funciona correctamente con todas las herramientas y funciones de WordPress.
+
+'hasi' viene del euskera y significa **empezar**, con este theme empiezo todos los blogs y webs corporativas que me piden explícitamente que haga con WordPress, está orientado a diseñadores y en cualquier caso contiene la funcionalidad necesaria para las siguientes vistas:
 
 * Home: Homepage
 * Front-page: Blog
