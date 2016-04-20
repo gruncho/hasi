@@ -1,0 +1,3 @@
+$(function(){
+    $('#simple-menu').sidr();
+})
