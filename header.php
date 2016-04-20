@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ic" type="image/x-icon">
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-		{lang: 'es'}
-	</script>
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-		{lang: 'es'}
-	</script>
 	<title><?php bloginfo('name'); ?>: <?php bloginfo('description'); ?> <?php wp_title(); ?></title>
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-	<link href="<?php bloginfo('template_url'); ?>/assets/scss/jquery.sidr.dark.css" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
