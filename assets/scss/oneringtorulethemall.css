@@ -1,4 +1,9 @@
 /* general */
+.c, .post-format, article {
+  width: 95%;
+  max-width: 950px;
+  margin: 0 auto; }
+
 /* blog homepage */
 /* page */
 /* single */
