@@ -4,20 +4,23 @@
 
 'hasi' viene del euskera y significa **empezar**, con este theme empiezo todos los blogs y webs corporativas que me piden explícitamente que haga con WordPress, está orientado a diseñadores y en cualquier caso contiene la funcionalidad necesaria para las siguientes vistas:
 
+### Secciones básicas
+
 * Home: Homepage
 * Front-page: Blog
 * Page: Página estática
 * Page template: Template diferenciado de la página estática
 
 
-Blog
+### Blog
 
 * Single: Artículo del blog
 * Single template: *coming soon...*
 * Category: Categoría del blog
 * Category theme: *coming soon...*
 * Tag: Listado de artículos de un tag
-* Search: 
+* Author: *coming soon...* 
+* Search: Resultados de buscador
 
 
 ### comentarios
