@@ -1,0 +1,3 @@
+# ignore sass compiled 
+.sass-cache
+*.css.map
