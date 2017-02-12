@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar('2')?>
 <?php if (is_home()): ?>
 <?php endif; ?>
 <?php if (is_category()): ?>
