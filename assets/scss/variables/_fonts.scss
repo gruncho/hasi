@@ -1,14 +1,2 @@
-@font-face{
-  font-family: 'Arimo Regular';
-  font-style: normal;
-  src: url('../fonts/Arimo-Regular.ttf');
-}
-
-@font-face{
-  font-family: 'Archivo Black-Regular';
-  font-style: normal;
-  src: url('../fonts/ArchivoBlack-Regular.ttf');
-}
-
-$font-family-first: 'Archivo Black-Regular', impact, sans-serif;
-$font-family-second: 'Arimo Regular', sans-serif;
+$font-family-first: 'Inter UI';
+$font-family-second: Times new roman, Times, Georgia, serif;

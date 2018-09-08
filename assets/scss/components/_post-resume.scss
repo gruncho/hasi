@@ -1,0 +1,43 @@
+$post-resume-pagragraph-color: $color-gray;
+$post-resume-padding: 2rem;
+$post-resume-title-font-family: $font-family-first;
+$post-resume-category-padding: calc( #{$post-resume-padding}/2 );
+
+.post-resume {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: $post-resume-padding 0;
+}
+
+.post-resume__thumb {
+  flex: 0 1 30%;
+}
+
+.post-resume__content {
+  flex: 0 1 60%;
+}
+
+.post-resume__picture {
+  @include aspect-ratio(2, 2.25);
+}
+
+.post-resume__link {
+  text-decoration: none;
+}
+
+.post-resume__category {
+  padding-bottom: $post-resume-category-padding;
+}
+
+.post-resume__title {
+  font-family: $post-resume-title-font-family;
+  font-size: 2.5rem;
+  padding-bottom: $post-resume-padding;
+}
+
+.post-resume__paragraph {
+  color: $post-resume-pagragraph-color;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}

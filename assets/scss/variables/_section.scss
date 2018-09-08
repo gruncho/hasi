@@ -1,1 +1,31 @@
-// convivences..
+$section-padding-mobile: 1rem;
+$section-padding-medium: 3rem;
+$section-padding-large: 4rem;
+$section-padding-xlarge: 5rem;
+
+
+.section {
+  padding-bottom: $section-padding-mobile;
+  padding-top: $section-padding-mobile;
+}
+
+@media #{$breakpoints-medium} {
+  .section {
+    padding-bottom: $section-padding-medium;
+    padding-top: $section-padding-medium;
+  }
+}
+
+@media #{$breakpoints-large} {
+  .section {
+    padding-bottom: $section-padding-large;
+    padding-top: $section-padding-large;
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+  .section {
+    padding-bottom: $section-padding-xlarge;
+    padding-top: $section-padding-xlarge;
+  }
+}

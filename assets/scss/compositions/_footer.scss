@@ -1,0 +1,33 @@
+$footer-background: $color-black;
+$footer-color: $color-white;
+$footer-font-family: $font-family-first;
+$footer-space: 8rem;
+$footer-cc-color: $color-gray;
+$footer-link-border: 1px solid $color-white;
+
+.footer {
+  background: $footer-background;
+  color: $footer-color;
+  font-family: $footer-font-family;
+  padding: $footer-space 0;
+}
+
+.footer__content {
+  @extend .grid-content;
+}
+
+
+.footer__credits {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer__cc {
+  color: $footer-cc-color;
+  font-size: .85rem;
+}
+
+.footer__link {
+  border-bottom: $footer-link-border;
+  text-decoration: none;
+}

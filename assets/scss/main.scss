@@ -1,11 +1,11 @@
-// Part of the pitcher github.com/gruncho/stylestree
+// Part of the pitcher github.com/gruncho/styletree
 //
 // For the full copyright and license information, please view the LICENSE
 // file that was distributed with this source code.
 //
 // @author Alex M. Gorgal (@gruncho) <alex@worldx3.com>
 
-// Variables
+// variables
 
 @import 'variables/breakpoints';
 @import 'variables/colors';
@@ -14,13 +14,32 @@
 @import 'variables/size';
 @import 'variables/section';
 
-// Base
+// base
 
 @import 'base/tags-reset';
 @import 'base/form-reset';
 @import 'base/common';
 
+// import
+
+@import 'import/fonts';
+
 // mixins
 
 @import 'mixins/flex-grid';
 @import 'mixins/aspect-ratio';
+
+// atoms
+
+@import 'atoms/category-link';
+
+// components
+
+@import 'components/post-resume';
+
+// compositions
+
+@import 'compositions/footer';
+@import 'compositions/header';
+@import 'compositions/category';
+@import 'compositions/list-of-posts';

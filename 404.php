@@ -1,5 +1,8 @@
-<?php get_header(); ?>
-<h1>
-	Error 404
-</h1>
-<?php get_footer(); ?>
+<div class="not-found">
+  <h1>
+    404 error
+  </h1>
+  <p>
+    Not found
+  </p>
+</div>

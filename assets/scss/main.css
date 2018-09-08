@@ -1,11 +1,19 @@
-@font-face {
-  font-family: 'Arimo Regular';
-  font-style: normal;
-  src: url("../fonts/Arimo-Regular.ttf"); }
-@font-face {
-  font-family: 'Archivo Black-Regular';
-  font-style: normal;
-  src: url("../fonts/ArchivoBlack-Regular.ttf"); }
+.section {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 3rem;
+    padding-top: 3rem; } }
+@media only screen and (min-width: 1024px) {
+  .section {
+    padding-bottom: 4rem;
+    padding-top: 4rem; } }
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 5rem;
+    padding-top: 5rem; } }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -169,8 +177,9 @@ html {
   overflow-x: hidden; }
 
 body {
-  color: #000;
-  font-family: "Arimo Regular", sans-serif;
+  background: #FCFCFC;
+  color: #111;
+  font-family: Times new roman, Times, Georgia, serif;
   font-size: 62.5%;
   font-weight: normal;
   min-height: 100%;
@@ -191,6 +200,22 @@ a {
   background: #33ff33;
   color: #fff; }
 
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/Inter-UI-Regular.woff2") format("woff2"), url("assets/fonts/Inter-UI-Regular.woff") format("woff"); }
+.grid-content, .footer__content, .header__content, .category__content, .list-of-posts,
+.grid {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.grid {
+  max-width: 1200px; }
+
+.grid-content, .footer__content, .header__content, .category__content, .list-of-posts {
+  max-width: 980px; }
+
 .layout,
 .layout-grid {
   justify-content: space-between;
@@ -202,5 +227,114 @@ a {
 .layout-grid {
   max-width: calc( 1200px + calc( 32px/2 ) );
   width: 95%; }
+
+@media only screen and (min-width: 768px) {
+  .grid-content, .footer__content, .header__content, .category__content, .list-of-posts,
+  .grid {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%; } }
+.category-link a {
+  background: #111;
+  color: #fff;
+  display: inline-block;
+  font-family: "Inter UI";
+  font-size: .85rem;
+  margin-right: 0.85rem;
+  padding: 0.85rem;
+  text-decoration: none; }
+
+.post-resume {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 2rem 0; }
+
+.post-resume__thumb {
+  flex: 0 1 30%; }
+
+.post-resume__content {
+  flex: 0 1 60%; }
+
+.post-resume__picture {
+  position: relative;
+  overflow: hidden;
+  background: #686868; }
+  .post-resume__picture:before {
+    content: '';
+    display: block;
+    padding-top: 112.5%;
+    width: 100%; }
+  .post-resume__picture > img {
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%; }
+
+.post-resume__link {
+  text-decoration: none; }
+
+.post-resume__category {
+  padding-bottom: calc( 2rem/2 ); }
+
+.post-resume__title {
+  font-family: "Inter UI";
+  font-size: 2.5rem;
+  padding-bottom: 2rem; }
+
+.post-resume__paragraph {
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+
+.footer {
+  background: #111;
+  color: #fff;
+  font-family: "Inter UI";
+  padding: 8rem 0; }
+
+.footer__credits {
+  font-size: 1rem;
+  padding-bottom: 1rem; }
+
+.footer__cc {
+  color: #686868;
+  font-size: .85rem; }
+
+.footer__link {
+  border-bottom: 1px solid #fff;
+  text-decoration: none; }
+
+.header {
+  background: #111;
+  padding: 1rem 0; }
+
+.header__content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.header__logo {
+  color: #fff;
+  font-family: "Inter UI";
+  font-size: 1rem;
+  text-decoration: none; }
+
+.category {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.category__header {
+  background: rgba(0, 0, 0, 0.2);
+  color: #111;
+  padding: 8rem; }
+
+.category__title {
+  font-family: "Inter UI";
+  font-size: 2rem;
+  padding: 1rem 0 2rem 0; }
 
 /*# sourceMappingURL=main.css.map */
