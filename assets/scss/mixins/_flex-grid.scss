@@ -1,0 +1,51 @@
+// WIP...
+
+$grid: 1200px;
+$grid-content: 980px;
+$gutter: 32px;
+$real-gutter: calc( #{$gutter}/2 );
+$mobile-space: 12px;
+
+.grid-content ,
+.grid {
+  padding-left: $mobile-space;
+  padding-right: $mobile-space;
+}
+
+.grid {
+  max-width: $grid;
+}
+
+.grid-content {
+  max-width: $grid-content;
+}
+
+.layout,
+.layout-grid {
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 100%;
+}
+
+.layout-grid {
+  max-width: calc( #{$grid} + #{$real-gutter} );
+  width: 95%;
+}
+
+@mixin column($column) {
+  box-sizing: border-box;
+  flex: 0 1 calc( #{$column}00%/12);
+  padding: 0 $real-gutter;
+}
+
+@media #{$breakpoints-medium} {
+  .grid-content,
+  .grid {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+  }
+} 

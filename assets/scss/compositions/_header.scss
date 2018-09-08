@@ -1,0 +1,21 @@
+$header-background: $color-black;
+
+.header {
+  background: $header-background;
+  padding: 1rem 0;
+}
+
+.header__content {
+  @extend .grid-content;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: $color-white;
+  font-family: $font-family-first;
+  font-size: 1rem;
+  text-decoration: none;
+}

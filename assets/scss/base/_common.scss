@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: $color-background;
+  color: $color-black;
+  font-family: $font-family-second;
+  font-size: 62.5%; // = 10px, 2.4rem 14px, 2.4rem = 24px..
+  font-weight: normal; 
+  min-height: 100%;
+
+  // revise 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: bold; // revise typo
+}
+
+a {
+  color: inherit;
+}
+
+::-moz-selection {
+  background: $color-corporative;
+  color: $color-white;
+}
+
+::selection {
+  background: $color-corporative;
+  color: $color-white;
+}

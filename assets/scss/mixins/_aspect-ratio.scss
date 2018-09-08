@@ -1,0 +1,21 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  overflow: hidden;
+  background: $color-gray;
+  
+  &:before {
+    content: '';
+    display: block;
+    padding-top: ($height / $width) * 100%;
+    width: 100%;
+  }
+
+  > img {
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+$category-title-font-family: $font-family-first;
+$category-header-background: $color-ligth-gray;
+$category-header-color: $color-black;
+
+.category {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.category__header {
+  background: $category-header-background;
+  color: $category-header-color;
+  padding: 8rem;
+}
+.category__content {
+  @extend .grid-content;
+}
+
+.category__title {
+  font-family: $category-title-font-family;
+  font-size: 2rem;
+  padding: 1rem 0 2rem 0;
+}

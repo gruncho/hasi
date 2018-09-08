@@ -4,7 +4,7 @@
   <div class="category__header">
     <div class="category__content">
       <h1 class="category__title">
-        Search results: <?php printf(get_search_query()); ?>
+        <?php single_cat_title(); ?>
       </h1>
     </div>
   </div>
