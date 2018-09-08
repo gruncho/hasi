@@ -1,0 +1,9 @@
+@import 'breakpoints';
+
+$breakpoints-medium: "only screen and (min-width: #{$size-medium})";
+$breakpoints-large: "only screen and (min-width: #{$size-large})";
+$breakpoints-xlarge: "only screen and (min-width: #{$size-xlarge})";
+$breakpoints-xxlarge: "only screen and (min-width: #{$size-xxlarge})";
+$breakpoints-xxxlarge: "only screen and (min-width: #{$size-xxxlarge})";
+
+// @media #{$breakpoints-large} {}
