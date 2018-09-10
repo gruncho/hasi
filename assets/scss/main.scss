@@ -36,10 +36,13 @@
 // components
 
 @import 'components/post-resume';
+@import 'components/main';
 
 // compositions
 
+@import 'compositions/page';
 @import 'compositions/footer';
 @import 'compositions/header';
 @import 'compositions/category';
+@import 'compositions/article-first';
 @import 'compositions/list-of-posts';

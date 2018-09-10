@@ -1,0 +1,36 @@
+.article-first__content {
+  @extend .grid;
+  @extend .section;
+}
+
+.article-first__thumbnail {
+  .picture {
+    @include aspect-ratio(3, 1);
+  }
+}
+
+.article-first__title {
+  font-family: $font-family-first;
+  font-size: 1.75rem;
+  padding: 1rem 0;
+}
+
+@media #{$breakpoints-large} {
+  .article-first__single-sidebar {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .article-first__post {
+    flex: 0 1 70%;
+  }
+  
+  .article-first__sidebar {
+    flex: 0 1 20%;
+  }
+
+  .article-first__title {
+    font-size: 3rem;
+  }
+}

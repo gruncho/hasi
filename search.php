@@ -3,8 +3,11 @@
 <section class="section category">
   <div class="category__header">
     <div class="category__content">
+      <div class="category__subtitle">
+        Resultados búsqueda de
+      </div>
       <h1 class="category__title">
-        Search results: <?php printf(get_search_query()); ?>
+        <?php printf(get_search_query()); ?>
       </h1>
     </div>
   </div>

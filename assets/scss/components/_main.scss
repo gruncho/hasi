@@ -1,0 +1,82 @@
+.main {
+  font-size: 1.05rem;
+  line-height: 1.65rem;
+
+  div,
+  p,
+  ul,
+  ol,
+  img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  div {
+    margin: 2rem 0;
+  }
+
+  img {
+    height: auto;
+  }
+
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-first;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 0 2rem 0;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      padding-bottom: .75rem;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: upper-roman;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    color: $color-corporative;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media #{$breakpoints-large} {
+  .main {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+}
