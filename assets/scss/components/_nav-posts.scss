@@ -1,0 +1,24 @@
+$nav-posts-link-color: $color-white;
+$nav-posts-link-background: $color-corporative;
+
+.nav-posts {
+  @extend .grid;
+  @extend .section;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.nav-posts__back,
+.nav-posts__next {
+  a {
+    background: $nav-posts-link-background;
+    color: $nav-posts-link-color;
+    display: inline-block;
+    font-family: $font-family-first;
+    font-size: .85rem;
+    padding: 1rem;
+    text-decoration: none;
+  }
+}

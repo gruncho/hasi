@@ -19,6 +19,8 @@
   </div>
 </section>
 
+<?php get_template_part('modules/components/nav-posts'); ?>
+
 <?php endif; ?>
 
 <?php get_footer(); ?>
