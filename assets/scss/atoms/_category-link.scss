@@ -1,17 +1,14 @@
-$category-link-background: $color-black;
-$category-link-color: $color-white;
+$category-link-color: $color-corporative;
 $category-link-font-family: $font-family-first;
 $category-link-space: .85rem;
 
 .category-link {
   a {
-    background: $category-link-background;
     color: $category-link-color;
     display: inline-block;
     font-family: $category-link-font-family;
-    font-size: .85rem;
+    font-size: 1rem;
     margin-right: $category-link-space;
-    padding: $category-link-space;
     text-decoration: none;
   }
 }

@@ -1,17 +1,17 @@
-.section {
+.section, .page__content, .article-first__content {
   padding-bottom: 1rem;
   padding-top: 1rem; }
 
 @media only screen and (min-width: 768px) {
-  .section {
+  .section, .page__content, .article-first__content {
     padding-bottom: 3rem;
     padding-top: 3rem; } }
 @media only screen and (min-width: 1024px) {
-  .section {
+  .section, .page__content, .article-first__content {
     padding-bottom: 4rem;
     padding-top: 4rem; } }
 @media only screen and (min-width: 1280px) {
-  .section {
+  .section, .page__content, .article-first__content {
     padding-bottom: 5rem;
     padding-top: 5rem; } }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -193,11 +193,11 @@ a {
   color: inherit; }
 
 ::-moz-selection {
-  background: #33ff33;
+  background: #504FFF;
   color: #fff; }
 
 ::selection {
-  background: #33ff33;
+  background: #504FFF;
   color: #fff; }
 
 @font-face {
@@ -205,15 +205,18 @@ a {
   font-style: normal;
   font-weight: 400;
   src: url("assets/fonts/Inter-UI-Regular.woff2") format("woff2"), url("assets/fonts/Inter-UI-Regular.woff") format("woff"); }
-.grid-content, .footer__content, .header__content, .category__content, .list-of-posts,
-.grid {
+.grid-content, .page__content, .category__content, .list-of-posts,
+.grid,
+.footer__content,
+.header__content,
+.article-first__content {
   padding-left: 12px;
   padding-right: 12px; }
 
-.grid {
+.grid, .footer__content, .header__content, .article-first__content {
   max-width: 1200px; }
 
-.grid-content, .footer__content, .header__content, .category__content, .list-of-posts {
+.grid-content, .page__content, .category__content, .list-of-posts {
   max-width: 980px; }
 
 .layout,
@@ -229,20 +232,21 @@ a {
   width: 95%; }
 
 @media only screen and (min-width: 768px) {
-  .grid-content, .footer__content, .header__content, .category__content, .list-of-posts,
-  .grid {
+  .grid-content, .page__content, .category__content, .list-of-posts,
+  .grid,
+  .footer__content,
+  .header__content,
+  .article-first__content {
     margin: auto;
     padding-left: 0;
     padding-right: 0;
     width: 90%; } }
 .category-link a {
-  background: #111;
-  color: #fff;
+  color: #504FFF;
   display: inline-block;
   font-family: "Inter UI";
-  font-size: .85rem;
+  font-size: 1rem;
   margin-right: 0.85rem;
-  padding: 0.85rem;
   text-decoration: none; }
 
 .post-resume {
@@ -288,8 +292,78 @@ a {
 .post-resume__paragraph {
   color: #686868;
   font-size: 1rem;
-  line-height: 1.25rem; }
+  line-height: 1.75rem; }
 
+.main {
+  font-size: 1.05rem;
+  line-height: 1.65rem; }
+  .main div,
+  .main p,
+  .main ul,
+  .main ol,
+  .main img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%; }
+  .main div {
+    margin: 2rem 0; }
+  .main img {
+    height: auto; }
+  .main h2,
+  .main h3,
+  .main h4,
+  .main h5,
+  .main h6 {
+    font-family: "Inter UI";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 0 2rem 0; }
+  .main ol,
+  .main ul {
+    padding-left: 1.5rem; }
+    .main ol li,
+    .main ul li {
+      padding-bottom: .75rem; }
+  .main ul {
+    list-style-type: disc; }
+  .main ol {
+    list-style-type: upper-roman; }
+  .main b,
+  .main strong {
+    font-weight: bold; }
+  .main i {
+    font-style: italic; }
+  .main a {
+    color: #504FFF;
+    text-decoration: none; }
+  .main a:hover {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 1024px) {
+  .main h2,
+  .main h3,
+  .main h4,
+  .main h5,
+  .main h6 {
+    font-size: 2rem;
+    line-height: 2.5rem; } }
+.page {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.page__header {
+  background: #504FFF;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center; }
+
+.page__title {
+  font-family: "Inter UI";
+  font-size: 2rem; }
+
+@media only screen and (min-width: 1024px) {
+  .page__header {
+    padding: 8rem 0; } }
 .footer {
   background: #111;
   color: #fff;
@@ -303,6 +377,10 @@ a {
 .footer__cc {
   color: #686868;
   font-size: .85rem; }
+  .footer__cc a {
+    text-decoration: none; }
+  .footer__cc a:hover {
+    text-decoration: underline; }
 
 .footer__link {
   border-bottom: 1px solid #fff;
@@ -323,18 +401,71 @@ a {
   font-size: 1rem;
   text-decoration: none; }
 
+.header__ul {
+  text-align: right; }
+  .header__ul li {
+    display: inline-block; }
+    .header__ul li a {
+      color: #fff; }
+
 .category {
   padding-bottom: 0;
   padding-top: 0; }
 
 .category__header {
-  background: rgba(0, 0, 0, 0.2);
-  color: #111;
-  padding: 8rem; }
+  background: #504FFF;
+  color: #fff;
+  padding: 3rem 0; }
+
+.category__title,
+.category__subtitle {
+  font-family: "Inter UI"; }
 
 .category__title {
-  font-family: "Inter UI";
   font-size: 2rem;
   padding: 1rem 0 2rem 0; }
+
+.category__subtitle {
+  font-size: .85rem; }
+
+@media only screen and (min-width: 1024px) {
+  .category__header {
+    padding: 8rem 0; } }
+.article-first__thumbnail .picture {
+  position: relative;
+  overflow: hidden;
+  background: #686868; }
+  .article-first__thumbnail .picture:before {
+    content: '';
+    display: block;
+    padding-top: 33.3333333333%;
+    width: 100%; }
+  .article-first__thumbnail .picture > img {
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%; }
+
+.article-first__title {
+  font-family: "Inter UI";
+  font-size: 1.75rem;
+  padding: 1rem 0; }
+
+@media only screen and (min-width: 1024px) {
+  .article-first__single-sidebar {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap; }
+
+  .article-first__post {
+    flex: 0 1 70%; }
+
+  .article-first__sidebar {
+    flex: 0 1 20%; }
+
+  .article-first__title {
+    font-size: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,7 +13,7 @@ $footer-link-border: 1px solid $color-white;
 }
 
 .footer__content {
-  @extend .grid-content;
+  @extend .grid;
 }
 
 
@@ -25,6 +25,14 @@ $footer-link-border: 1px solid $color-white;
 .footer__cc {
   color: $footer-cc-color;
   font-size: .85rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer__link {

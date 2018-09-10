@@ -1,6 +1,6 @@
 $category-title-font-family: $font-family-first;
-$category-header-background: $color-ligth-gray;
-$category-header-color: $color-black;
+$category-header-background: $color-corporative;
+$category-header-color: $color-white;
 
 .category {
   padding-bottom: 0;
@@ -10,14 +10,29 @@ $category-header-color: $color-black;
 .category__header {
   background: $category-header-background;
   color: $category-header-color;
-  padding: 8rem;
+  padding: 3rem 0;
 }
 .category__content {
   @extend .grid-content;
 }
 
-.category__title {
+.category__title,
+.category__subtitle {
   font-family: $category-title-font-family;
+
+}
+
+.category__title {
   font-size: 2rem;
   padding: 1rem 0 2rem 0;
+}
+
+.category__subtitle {
+  font-size: .85rem;
+}
+
+@media #{$breakpoints-large} {
+  .category__header {
+    padding: 8rem 0;
+  }
 }

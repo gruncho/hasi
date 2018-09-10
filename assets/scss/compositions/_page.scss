@@ -1,0 +1,30 @@
+$page-header-background: $color-corporative;
+$page-header-color: $color-white;
+
+.page {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.page__header {
+  background: $page-header-background;
+  color: $page-header-color;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.page__content {
+  @extend .grid-content;
+  @extend .section;
+}
+
+.page__title {
+  font-family: $font-family-first;
+  font-size: 2rem;
+}
+
+@media #{$breakpoints-large} {
+  .page__header {
+    padding: 8rem 0;
+  }
+}

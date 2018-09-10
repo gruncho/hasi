@@ -6,7 +6,7 @@ $header-background: $color-black;
 }
 
 .header__content {
-  @extend .grid-content;
+  @extend .grid;
 
   display: flex;
   flex-flow: row nowrap;
@@ -18,4 +18,15 @@ $header-background: $color-black;
   font-family: $font-family-first;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.header__ul {
+  text-align: right;
+  
+  li {
+    display: inline-block;
+    a {
+      color: $color-white;
+    }
+  }
 }

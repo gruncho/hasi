@@ -3,6 +3,9 @@
 <section class="section category">
   <div class="category__header">
     <div class="category__content">
+      <div class="category__subtitle">
+        Todos los artículos de
+      </div>
       <h1 class="category__title">
         <?php single_cat_title(); ?>
       </h1>
