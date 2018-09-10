@@ -1,17 +1,17 @@
-.section, .page__content, .article-first__content {
+.section, .nav-posts, .page__content, .article-first__content {
   padding-bottom: 1rem;
   padding-top: 1rem; }
 
 @media only screen and (min-width: 768px) {
-  .section, .page__content, .article-first__content {
+  .section, .nav-posts, .page__content, .article-first__content {
     padding-bottom: 3rem;
     padding-top: 3rem; } }
 @media only screen and (min-width: 1024px) {
-  .section, .page__content, .article-first__content {
+  .section, .nav-posts, .page__content, .article-first__content {
     padding-bottom: 4rem;
     padding-top: 4rem; } }
 @media only screen and (min-width: 1280px) {
-  .section, .page__content, .article-first__content {
+  .section, .nav-posts, .page__content, .article-first__content {
     padding-bottom: 5rem;
     padding-top: 5rem; } }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -207,13 +207,14 @@ a {
   src: url("assets/fonts/Inter-UI-Regular.woff2") format("woff2"), url("assets/fonts/Inter-UI-Regular.woff") format("woff"); }
 .grid-content, .page__content, .category__content, .list-of-posts,
 .grid,
+.nav-posts,
 .footer__content,
 .header__content,
 .article-first__content {
   padding-left: 12px;
   padding-right: 12px; }
 
-.grid, .footer__content, .header__content, .article-first__content {
+.grid, .nav-posts, .footer__content, .header__content, .article-first__content {
   max-width: 1200px; }
 
 .grid-content, .page__content, .category__content, .list-of-posts {
@@ -234,6 +235,7 @@ a {
 @media only screen and (min-width: 768px) {
   .grid-content, .page__content, .category__content, .list-of-posts,
   .grid,
+  .nav-posts,
   .footer__content,
   .header__content,
   .article-first__content {
@@ -347,6 +349,21 @@ a {
   .main h6 {
     font-size: 2rem;
     line-height: 2.5rem; } }
+.nav-posts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.nav-posts__back a,
+.nav-posts__next a {
+  background: #504FFF;
+  color: #fff;
+  display: inline-block;
+  font-family: "Inter UI";
+  font-size: .85rem;
+  padding: 1rem;
+  text-decoration: none; }
+
 .page {
   padding-bottom: 0;
   padding-top: 0; }
