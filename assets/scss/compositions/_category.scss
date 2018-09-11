@@ -1,6 +1,8 @@
 $category-title-font-family: $font-family-first;
 $category-header-background: $color-corporative;
 $category-header-color: $color-white;
+ $category-message-color: $color-black;
+$category-message-font-family: $font-family-first;
 
 .category {
   padding-bottom: 0;
@@ -25,6 +27,14 @@ $category-header-color: $color-white;
 .category__title {
   font-size: 2rem;
   padding: 1rem 0 2rem 0;
+}
+
+.category__message {  
+  color: $category-message-color;
+  font-family: $category-message-font-family;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 4rem 0;
 }
 
 .category__subtitle {

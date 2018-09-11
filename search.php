@@ -16,9 +16,14 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php get_template_part('modules/components/post-resume'); ?>
     <?php endwhile; ?>
+    <?php  else: ?>
+      <div class="category__message">
+        <?php _e('Lo sentimos, no hay resultados con este término de búsqueda.'); ?>
+      </div>
+    <?php endif; ?>
   </div>
+
 </section>
 
-<?php endif; ?>
 
 <?php get_footer(); ?>
