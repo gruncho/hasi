@@ -32,12 +32,32 @@ $post-resume-category-padding: calc( #{$post-resume-padding}/2 );
 
 .post-resume__title {
   font-family: $post-resume-title-font-family;
-  font-size: 2.5rem;
-  padding-bottom: $post-resume-padding;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 .post-resume__paragraph {
   color: $post-resume-pagragraph-color;
+  display: none;
   font-size: 1rem;
   line-height: 1.75rem;
+  padding-top: 1rem;
+}
+
+@media #{$breakpoints-medium} {
+  .post-resume__title {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .post-resume__paragraph {
+    display: block;
+  }
+}
+
+@media #{$breakpoints-large} {
+  .post-resume__title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
 }
