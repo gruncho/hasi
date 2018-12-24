@@ -1,32 +1,51 @@
 $header-background: $color-black;
 
 .header {
-  background: $header-background;
   padding: 1rem 0;
 }
 
 .header__content {
   @extend .grid;
 
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 
 .header__logo {
-  color: $color-white;
-  font-family: $font-family-first;
+  color: $color-black;
   font-size: 1rem;
+  font-weight :bold;
   text-decoration: none;
 }
 
-.header__ul {
+.header__nav-list {
   text-align: right;
   
   li {
     display: inline-block;
+
     a {
-      color: $color-white;
+      color: $color-black;
+      display: inline-block;
+      font-size: .85rem;
+      padding: 1rem;
+      text-decoration: none;
+    }
+  }
+}
+
+@media #{$breakpoints-large} {
+  .header__logo {
+    font-size: 1.75rem;
+  }
+
+  .header__nav-list {
+    li {
+      a {
+        font-size: 1rem;
+      }
     }
   }
 }

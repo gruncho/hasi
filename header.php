@@ -21,16 +21,11 @@
 <header class="header">
   <div class="header__content">
     <a class="header__logo" href="<?php bloginfo(wpurl); ?>">
-      hasi theme
+      <?php bloginfo(title); ?>
     </a>
-    <div class="header__search">
-      <?php get_template_part('modules/atoms/search-form'); ?>
-    </div>
     <nav class="header__nav">
-      <ul class="header__ul">
-      <?php wp_list_categories( array(
-          'title_li' => ''
-      ) ); ?>
+      <ul class="header__nav-list">
+        <?php wp_list_pages( array( 'title_li' => '' ) ); ?>
       </ul>
     </nav>
   </div>
